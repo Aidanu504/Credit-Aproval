@@ -62,27 +62,10 @@ function App() {
 
             {!formVisible && !infoVisible ? (
                 <main>
-                    <section className="hero">
-                        <img src={heroImage} alt="Credit Approval" className="hero-image" />
+                    <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
                         <h2>Welcome to Credit Card Approval Checker</h2>
                         <p>Your gateway to finding out if you qualify for credit cards based on your financial information.</p>
                         <button onClick={() => setFormVisible(true)}>Check Your Approval</button>
-                    </section>
-
-                    <section className="services">
-                        <h2>Our Services</h2>
-                        <div className="service-item">
-                            <h3>Personalized Credit Analysis</h3>
-                            <p>We offer tailored insights to help you understand your credit standing.</p>
-                        </div>
-                        <div className="service-item">
-                            <h3>Fast and Easy Approval</h3>
-                            <p>Get quick feedback on your eligibility for various credit cards.</p>
-                        </div>
-                        <div className="service-item">
-                            <h3>Dedicated Support</h3>
-                            <p>Our team is here to guide you through the application process.</p>
-                        </div>
                     </section>
                 </main>
             ) : formVisible ? (
@@ -132,7 +115,6 @@ function App() {
                                 <option value="salary">Salary</option>
                                 <option value="business">Business</option>
                                 <option value="pension">Pension</option>
-                                {/* Add more options as needed */}
                             </select>
                         </div>
                         <div className="form-group">
@@ -142,7 +124,6 @@ function App() {
                                 <option value="highschool">High School</option>
                                 <option value="bachelor">Bachelor's</option>
                                 <option value="master">Master's</option>
-                                {/* Add more options as needed */}
                             </select>
                         </div>
                         <div className="form-group">

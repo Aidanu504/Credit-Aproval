@@ -1,0 +1,131 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  text-align: center;
+  max-width: 100%; /* Ensure the app does not exceed the screen width */
+  margin: 0 auto; /* Center the app container */
+}
+
+.hero {
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.hero img {
+  max-width: 30%; /* Make the image smaller */
+  height: auto;
+}
+
+.services {
+  background: #fff;
+  padding: 20px;
+}
+
+.service-item {
+  margin: 20px 0;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 8px;
+  padding: 15px; /* Add padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.service-item h3 {
+  margin: 0; /* Remove margin */
+}
+
+/* Header styling */
+.App-header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between title and nav */
+  background: #4a90e2;
+  color: white;
+  padding: 20px 40px; /* Add padding */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.App-title {
+  margin: 0; /* Remove margin */
+}
+
+/* Navigation bar styling */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove margin */
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+/* Form styling */
+form {
+  max-width: 100%; /* Adjust form width to fit screen */
+  margin: 20px auto;
+  text-align: left;
+  padding: 0 20px; /* Add padding for mobile devices */
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+button {
+  padding: 10px 15px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #357abd;
+}
+
+/* Result styling */
+.result {
+  margin-top: 20px;
+  background: #d0f0c0;
+  padding: 10px;
+  border: 1px solid #b0d9a3;
+}
+
+/* Footer styling */
+.App-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+  width: 100%;
+}
